@@ -19,6 +19,7 @@ local build_snippet = function(trig, node, match, priority, name)
     name = name and name(match) or match,
     trig = trig(match),
     priority = priority,
+    regTrig = true,
   }, vim.deepcopy(node))
 end
 
