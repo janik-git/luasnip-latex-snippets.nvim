@@ -75,11 +75,13 @@ function M.retrieve(is_math)
     s({
       trig = "([%a])(%d)",
       name = "auto subscript",
+      regTrig = true,
     }, vim.deepcopy(subscript_node)),
 
     s({
       trig = "([%a])_(%d%d)",
       name = "auto subscript 2",
+      regTrig = true,
     }, vim.deepcopy(subscript_node)),
 
     s({
@@ -87,6 +89,7 @@ function M.retrieve(is_math)
       trig = ".*%)/",
       name = "() frac",
       wordTrig = true,
+      regTrig = true,
     }, vim.deepcopy(frac_node)),
   }
 
@@ -94,6 +97,7 @@ function M.retrieve(is_math)
     snippets[#snippets + 1] = s({
       name = "Fraction no ()",
       trig = trig,
+      regTrig = true,
     }, vim.deepcopy(frac_no_parens))
   end
 
