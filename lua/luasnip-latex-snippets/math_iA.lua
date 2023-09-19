@@ -57,6 +57,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "xp1", name = "x" }, "x_{n+1}"),
     parse_snippet({ trig = "xmm", name = "x" }, "x_{m}"),
     parse_snippet({ trig = "R0+", name = "R0+" }, "\\mathbb{R}_0^+"),
+    parse_snippet({ trig = "grad", name = "gradient" }, "\\triangledown"),
 
     parse_snippet({ trig = "notin", name = "not in " }, "\\not\\in "),
 

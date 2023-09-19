@@ -30,6 +30,7 @@ function M.retrieve(is_math)
       { trig = "abs", name = "absolute value \\abs{}" },
       "\\abs{${1:${TM_SELECTED_TEXT}}}$0"
     ),
+    parse_snippet({ trig = "sss", name = " sum" }, "\\sum_{$1}"),
   }
 end
 
