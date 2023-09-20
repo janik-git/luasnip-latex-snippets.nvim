@@ -31,6 +31,10 @@ function M.retrieve(is_math)
       "\\abs{${1:${TM_SELECTED_TEXT}}}$0"
     ),
     parse_snippet({ trig = "sss", name = " sum" }, "\\sum_{$1}"),
+    parse_snippet(
+      { trig = "case", name = "cases", regTrig = true },
+      "\\begin{cases}\n\t$1\n\\end{cases}"
+    ),
   }
 end
 
