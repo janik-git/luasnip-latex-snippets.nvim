@@ -7,7 +7,7 @@ function M.retrieve(is_math)
   local pipe, no_backslash = utils.pipe, utils.no_backslash
 
   local parse_snippet = ls.extend_decorator.apply(ls.parser.parse_snippet, {
-    wordTrig = false,
+    wordTrig = true,
     condition = pipe({ is_math, no_backslash }),
   }) --[[@as function]]
 
