@@ -20,6 +20,8 @@ function M.retrieve(is_math)
 
     with_priority({ trig = "hat", name = "hat" }, "\\hat{$1}$0 "),
     with_priority({ trig = "bar", name = "bar" }, "\\overline{$1}$0 "),
+    with_priority({ trig = "line", name = "line" }, "\\overline{$1}$0 "),
+    with_priority({ trig = "tilde", name = "tilde" }, "\\tilde{$1}$0 "),
     with_priority({ trig = "dot", name = "dot" }, "\\dot{$1}$0 "),
 
     parse_snippet({ trig = "inf", name = "\\infty" }, "\\infty"),
