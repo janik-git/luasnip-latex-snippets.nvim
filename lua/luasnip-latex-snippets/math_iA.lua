@@ -100,6 +100,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "ceil", name = "ceil" }, "\\left\\lceil $1 \\right\\rceil $0"),
     parse_snippet({ trig = "OO", name = "emptyset" }, "\\O"),
     parse_snippet({ trig = "RR", name = "R" }, "\\mathbb{R}"),
+    parse_snippet({ trig = "eps", name = "R" }, "\\epsilon"),
     parse_snippet({ trig = "CC", name = "C" }, "\\mathcal{C}"),
     parse_snippet({ trig = "QQ", name = "Q" }, "\\mathbb{Q}"),
     parse_snippet({ trig = "ZZ", name = "Z" }, "\\mathbb{Z}"),
