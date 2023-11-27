@@ -43,7 +43,7 @@ function M.retrieve(is_math)
     ),
     parse_snippet(
       { trig = "nmat", name = "n-dim-mat" },
-      "\\begin{pmatrix} 1 & 0 & \\ldots  & 0 & ${1:x} \\\\ &  & \\vdots  &  & \\vdots \\\\ 0 & 0 & \\ldots  & 1 & ${2:x} \\\\ 0 & 0 & \\ldots  & 0 & ${3:x} \\\\ \\end{pmatrix}"
+      "\\begin{pmatrix} 1 & 0 & \\ldots  & 0 & ${1:x} \\\\\\ &  & \\vdots  &  & \\vdots \\\\\\ 0 & 0 & \\ldots  & 1 & ${2:x} \\\\\\ 0 & 0 & \\ldots  & 0 & ${3:x} \\\\\\ \\end{pmatrix}"
     ),
     parse_snippet(
       { trig = "lr", name = "left( right)" },
