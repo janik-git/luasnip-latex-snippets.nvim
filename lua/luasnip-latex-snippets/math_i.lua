@@ -39,7 +39,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "pmat", name = "pmat" }, "\\begin{pmatrix} $1 \\end{pmatrix} $0"),
     parse_snippet(
       { trig = "cvec", name = "column vector" },
-      "\\begin{pmatrix} ${1:x}_${2:1}\\\\ \\vdots\\\\ $1_${2:n} \\end{pmatrix}"
+      "\\begin{pmatrix} ${1:x}_${2:1}\\\\\\ \\vdots \\\\\\ $1_${2:n} \\end{pmatrix}"
     ),
     parse_snippet(
       { trig = "nmat", name = "n-dim-mat" },
