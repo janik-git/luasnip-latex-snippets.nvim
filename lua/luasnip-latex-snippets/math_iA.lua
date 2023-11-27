@@ -93,15 +93,6 @@ function M.retrieve(is_math)
 
     parse_snippet({ trig = ":=", name = "colon equals (lhs defined as rhs)" }, "\\coloneqq "),
 
-    parse_snippet(
-      { trig = "cvec", name = "column vector" },
-      "\\begin{pmatrix} ${1:x}_${2:1}\\\\ \\vdots\\\\ $1_${2:n} \\end{pmatrix}"
-    ),
-    parse_snippet(
-      { trig = "nmat", name = "n-dim-mat" },
-      "\\begin{pmatrix} 1 & 0 & ldots  & 0 & ${1:x} \\ &  & \vdots  &  & \vdots \\ 0 & 0 & ldots  & 1 & ${2:x} \\ 0 & 0 & ldots  & 0 & ${3:x} \\ \\end{pmatrix}"
-    ),
-
     parse_snippet({ trig = "ceil", name = "ceil" }, "\\left\\lceil $1 \\right\\rceil $0"),
     parse_snippet({ trig = "OO", name = "emptyset" }, "\\O"),
     parse_snippet({ trig = "RR", name = "R" }, "\\mathbb{R}"),
